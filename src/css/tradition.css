@@ -1,0 +1,291 @@
+/* -------------- Tradition -------------- */
+.tradition {
+  background: #936735;
+  max-height: 300vh;
+  text-align: center;
+  position: relative;
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.tradition h2 {
+  font-size: 4em;
+  color: #d5ad6d; /*if no support for background-clip*/
+  opacity: 1;
+  border: 5px solid #d5ad6d;
+  padding: 10px;
+  background: -webkit-linear-gradient(transparent, transparent),
+    -webkit-linear-gradient(top, rgba(213, 173, 109, 1) 0%, rgba(
+            213,
+            173,
+            109,
+            1
+          )
+          26%, rgba(226, 186, 120, 1) 35%, rgba(163, 126, 67, 1) 45%, rgba(
+            145,
+            112,
+            59,
+            1
+          )
+          61%, rgba(213, 173, 109, 1) 100%);
+  background: -o-linear-gradient(transparent, transparent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.tradition h1 {
+  font-size: 2.5em;
+  padding-top: 2em;
+  color: white;
+  position: relative;
+}
+.tradition h1 span {
+  border: 5px solid white;
+  padding: 10px;
+}
+.tradition h1::after,
+.tradition h1::before {
+  content: '';
+  position: absolute;
+  bottom: -50%;
+  border: 1px solid gold;
+  width: 30px;
+}
+.tradition h1::after {
+  right: 50%;
+  transform: skew(0, 20deg); /* transform: rotate(-50deg); */
+}
+.tradition h1::before {
+  left: 50%;
+  transform: skew(0, -20deg);
+  /* transform: rotate(50deg); */
+}
+.tradition h1:hover::after,
+.tradition h1:hover::before {
+  border-width: 10px;
+  transition: border-width ease-in-out 800ms;
+}
+.tradition h1:hover .spanTradition {
+  transition: color ease-in-out 300ms;
+  color: gold;
+}
+.tradition h1:hover ~ .container-wrap::before {
+  transition: opacity ease-in-out 800ms;
+  opacity: 1;
+}
+.test {
+  /* width: 200px;
+  height: 200px;
+  position: absolute;
+  z-index: 12312321312;
+  background: purple; */
+}
+/* Grid tradition */
+.i {
+  /* border-radius: 20px; */
+}
+.container-wrap::after {
+  position: absolute;
+  content: '';
+  z-index: 0;
+  background: gold;
+  left: 49.9%; /* top: 2em; */
+  width: 2px;
+  opacity: 0.3;
+  height: 85%;
+  bottom: 0;
+}
+.container-wrap {
+  padding: 10%;
+  display: grid;
+  /* flex: 1 1 80%;
+  height: inherit; */
+}
+.container-wrap p {
+  color: white;
+}
+.wrap {
+  display: grid;
+  height: 100%;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 3em;
+}
+.big-item {
+  padding: 20px;
+  position: relative;
+}
+.bigOne,
+.bigTwo,
+.bigThree {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+.big-item::before {
+  content: '';
+  position: absolute;
+  display: block;
+  background: gold;
+  height: 1px;
+  bottom: 0;
+  right: 50%;
+  width: 5%;
+  /* border-radius: 20px; */
+}
+/* .pic::before {
+  content: '';
+  position: absolute;
+  display: block;
+  background: gold;
+  height: 1px;
+  bottom: 0;
+  right: 50%;
+  width: 5%;
+} */
+.bigTwo::before {
+  content: '';
+  position: absolute;
+  display: block;
+  background: gold;
+  height: 1px;
+  bottom: 0;
+  left: 50%;
+  width: 5%; /* border-radius: 20px; */
+}
+.year,
+.stuff {
+  /* border: 1px solid #d5ad6d; */
+}
+.pic {
+  box-shadow: -11px 10px 5px -6px rgba(0, 0, 0, 0.75);
+}
+.text {
+  background: #fefeff15;
+  box-shadow: #936735;
+  position: relative;
+}
+.text::before {
+  content: '';
+  position: absolute;
+  display: block;
+  background: gold;
+  height: 1px;
+  bottom: 0;
+  width: 50%;
+  border-radius: 20px;
+}
+.text::after {
+  content: '';
+  position: absolute;
+  display: block;
+  background: gold;
+  height: 50%;
+  bottom: 0;
+  width: 1px;
+  border-radius: 20px;
+  /* transition: height ease-in-out 250ms; */
+}
+.textTwo::after {
+  content: '';
+  position: absolute;
+  display: block;
+  background: gold;
+  height: 50%;
+  top: 0;
+  right: 0;
+  width: 1px;
+  border-radius: 20px;
+}
+.textTwo::before {
+  content: '';
+  position: absolute;
+  display: block;
+  background: gold;
+  height: 1px;
+  top: 0;
+  right: 0;
+  width: 50%;
+  border-radius: 20px;
+}
+.text::before {
+  content: '';
+  position: absolute;
+  display: block;
+  background: gold;
+  height: 1px;
+  bottom: 0;
+  width: 50%;
+  border-radius: 20px;
+}
+/* .text:hover::after {
+  height: 100%;
+} */
+/* .text {
+  position: relative;
+}
+.text::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  background: red;
+} */
+.stuff {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+}
+.picOne {
+  background: url('../../pics/1.jpg');
+  background-size: cover;
+  box-shadow: -11px 10px 5px -6px rgba(0, 0, 0, 0.75);
+  background-position: center;
+}
+.picTwo {
+  box-shadow: 11px 11px 5px -6px rgba(0, 0, 0, 0.75);
+  background: url('../../pics/2.jpg');
+  background-size: cover;
+  background-position: center;
+  max-width: 600px;
+}
+.picThree {
+  box-shadow: -11px 10px 5px -6px rgba(0, 0, 0, 0.75);
+  background: url('../../pics/bakery1213.jpg');
+  background-size: cover;
+  background-position: center;
+  max-width: 600px;
+}
+.year {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.year h2:hover {
+  transition: box-shadow ease-in-out 250ms;
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+}
+/* NONE */
+@media (max-width: 750px) {
+  .tradition {
+    display: none;
+  }
+}
+/* STICKY SITUATION */
+.container-wrap::before {
+  content: '';
+  background: gold;
+  top: 90%;
+  left: 49.4%;
+  width: 10px;
+  height: 10px;
+  position: sticky;
+  z-index: 1231232;
+}
+/* .container-wrap::before {
+  position: absolute;
+  content: '';
+  z-index: 0;
+  background: gold;
+  left: 49.9%;
+  width: 2px;
+  opacity: 0.3;
+  height: 80%;
+  bottom: 0;
+} */

@@ -1,0 +1,49 @@
+/* -------------- SECTION HALF -------------- */
+.sectionHalf {
+  height: 20vh;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  /* height: 200px; */
+}
+.sectionHalf img {
+  position: absolute;
+  max-width: 500px;
+  /* margin: -8rem 0 0 0; */
+  top: -10rem;
+  top: -58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  filter: drop-shadow(2em 2em 10px #0202029c);
+  /* margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  display: block; */
+}
+
+/* .sectionHalf::before {
+  content: url(../../pics/purepng.png);
+  transform: rotate(20deg);
+  opacity: 1;
+  position: absolute;
+  top: -4rem;
+  left: -30rem;
+  z-index: -1;
+}
+.sectionOne blockquote::after {
+  content: url(../../pics/ppng.png);
+  opacity: 1;
+  position: absolute;
+  bottom: -10rem;
+  right: -5rem;
+  width: 90%;
+} */
+@media (max-width: 800px) {
+  .sectionHalf {
+    display: none;
+  }
+}

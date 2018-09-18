@@ -1,0 +1,122 @@
+/* -------------- SECTION ONE -------------- */
+
+.sectionOne {
+  position: relative;
+  padding: 4em;
+  /* height: 90vh; */
+}
+
+.sectionOne::after,
+.sectionOne::before {
+  position: absolute;
+  content: '';
+  width: 100px;
+  height: 150px;
+  background: #ffffff;
+  bottom: -1em;
+  z-index: 100;
+}
+
+.sectionOne::before {
+  right: 50%;
+  transform: skew(0, 20deg);
+}
+
+.sectionOne::after {
+  left: 50%;
+  transform: skew(0, -20deg);
+}
+.sectionOne h2,
+.sectionOne p {
+  color: black;
+  text-align: center;
+}
+.sectionOne h2::before,
+.sectionOne h2::after {
+  display: block;
+  color: green;
+}
+.sectionOne blockquote {
+  padding: 0 3rem;
+  /* display: flex; */
+  position: relative;
+  font-weight: 700;
+  z-index: 12312312;
+}
+.sectionOne blockquote::before {
+  content: open-quote;
+  font-size: 6em;
+  color: #ddd;
+  margin-top: -0.3em;
+  margin-left: -0.3em;
+  position: absolute;
+  /* opacity: 0.5; */
+  z-index: -1;
+}
+.one {
+  text-align: center;
+  opacity: 0;
+  transition: opacity ease-in-out 250ms;
+  position: relative;
+  z-index: 1313123123;
+}
+.sectionOne .place {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+.sectionOne .one h4 {
+  text-align: center;
+  margin-top: 25px;
+  padding: 5px;
+  color: black;
+}
+
+.sectionOne .one h4::before,
+.sectionOne .one h4::after {
+  content: '';
+  color: #ddd;
+  height: 2%;
+  display: block;
+  position: absolute;
+  top: 50%;
+}
+
+.sectionOne .one h4::before {
+  background: black;
+  width: 50vw;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: -2;
+}
+
+.sectionOne .one h4::after {
+  height: 100%;
+  background: white;
+  left: -0.1em;
+  right: -0.1em;
+  z-index: -1;
+}
+
+/* HOVER ON BLOCKQUOTE */
+.sectionOne blockquote:hover:before {
+  margin-top: -0.45em;
+  margin-left: -0.45em;
+  transition: margin-top ease-in-out 350ms, margin-left ease-in-out 350ms;
+}
+.sectionOne blockquote:hover ~ .one {
+  opacity: 1;
+}
+
+@media (max-width: 750px) {
+  .sectionOne::after,
+  .sectionOne::before {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .sectionOne {
+    display: none;
+  }
+}

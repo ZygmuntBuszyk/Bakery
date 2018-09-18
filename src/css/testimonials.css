@@ -1,0 +1,110 @@
+.testimonials {
+  height: 100vh;
+  border-top: 2px solid #d5ad6d;
+}
+.testimonials-party {
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.testimonials-text {
+  height: 50vh;
+  background: url('../../pics/clean.jpg');
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0px -20px 36px 0px rgba(147, 103, 53, 0.9);
+  /* filter: blur(10px); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testimonials-text h1 {
+  font-size: 3em;
+  padding: 5px;
+  color: #d5ad6d;
+  border: 1px solid rgba(147, 103, 53, 0.9);
+  /* filter: blur(2px); */
+}
+.testimonials-party {
+  height: 50vh;
+  background: rgba(147, 103, 53, 0.9);
+}
+
+.testimonials blockquote {
+  display: block;
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: white;
+  text-align: justify;
+}
+
+.testimonials blockquote::before {
+  content: '\201C'; /*Unicode for Left Double Quote*/
+
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+
+blockquote::after {
+  /*Reset to make sure*/
+  content: '';
+}
+
+/* css carousel  */
+.item {
+  padding: 30px 10%;
+}
+.owl-prev span,
+.owl-next span {
+  color: white;
+  transition: color ease-in-out 0.3s;
+}
+.owl-prev,
+.owl-next {
+  position: absolute;
+}
+.owl-next span:hover,
+.owl-prev span:hover {
+  color: black;
+  transition: color ease-in-out 0.3s;
+}
+.owl-prev {
+  top: 30%;
+  left: 5%;
+}
+.owl-next {
+  top: 30%;
+  right: 5%;
+}
+.owl-dots {
+  display: none;
+}
+
+.testimonials .circle {
+  font-size: 3em;
+  background: url('../../pics/sweets.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 325px) {
+  .testimonials .circle {
+    display: none;
+  }
+  .testimonials-text h1 {
+    font-size: 2em;
+  }
+}

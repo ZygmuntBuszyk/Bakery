@@ -1,0 +1,43 @@
+/* -------------- MAIN -------------- */
+*,
+*::before,
+*::after {
+  /* wszystkie elementy 
+  eliminuje problemy z margin i padding
+  Dam to pozniej do body
+  margin i padding powinien byc dodany do 
+  width i high do wszystkich elementów? */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+  font-family: 'Courier New', Courier;
+  overflow-x: hidden;
+  /* overflow-x blokuje scrolle horyzontalne */
+}
+
+/* Main */
+section {
+  display: block;
+}
+/* CLEARFIX  if needed */
+
+.clearfix::after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+/* OWL's car */
+.owl-nav .owl-prev span,
+.owl-nav .owl-next span {
+  font-size: 5em;
+}
+
+.owl-carousel {
+  /* background: grey; */
+}

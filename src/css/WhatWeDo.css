@@ -1,0 +1,113 @@
+/* -------------- What We Do -------------- */
+.WhatWeDo {
+  background: #f0d7a7;
+  min-height: 100vh;
+  text-align: center;
+  font-size: 1em;
+}
+.WhatWeDo p {
+  color: black;
+}
+.WhatWeDo h1 {
+  padding-bottom: 1em;
+  color: white;
+  position: relative;
+  font-size: 2.5em;
+}
+/* .WhatWeDo h1::before {
+  content: '';
+  background: gold;
+  top: 0;
+  left: 49.6%;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+
+.WhatWeDo h1:hover::before {
+  content: '';
+  background: gold;
+  top: 3em;
+  left: 49.6%;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  transition: top ease-in-out 550ms;
+} */
+/* 
+.span-WhatWeDo::after {
+  content: '';
+  background: gold;
+  top: 4.2em;
+  left: 45%;
+  width: 50px;
+  height: 5px;
+  position: absolute;
+} */
+
+.span-WhatWeDo {
+  padding: 20px;
+  border: 1px solid #d5ad6d;
+  background: #f0d7a7;
+  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+}
+/* .span-WhatWeDo:hover {
+  border: 5px solid #d5ad6d;
+  transition-delay: 2s;
+} */
+
+.wrap-WhatWeDo {
+  display: grid;
+  grid-gap: 0;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  margin-top: 50px;
+  height: 100%;
+  border-top: 0.5px solid #d5ad6d;
+  border-bottom: 0.5px solid #d5ad6d;
+}
+.block-WhatWeDo {
+  padding: 20px;
+  display: grid;
+  place-content: center;
+  background-color: rgba(224, 169, 67, 0.116);
+}
+.block-WhatWeDo h2,
+p {
+  color: white;
+}
+.block-WhatWeDo h2 {
+  padding: 1.2em;
+}
+
+.imgOne {
+  background: url('../../pics/siofosdifjsd.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.imgTwo {
+  background: url('../../pics/bigstock-baking-background-with-eggshel-75482002WEB.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* media stacking*/
+
+@media (max-width: 600px) {
+  .wrap-WhatWeDo {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .imgOne,
+  .imgTwo {
+    min-height: 17em;
+  }
+  .WhatWeDo {
+    padding-bottom: 400px;
+  }
+}
+@media (max-width: 400px) {
+  .imgOne,
+  .imgTwo {
+    min-height: 10em;
+  }
+}

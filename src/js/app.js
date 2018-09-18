@@ -22,7 +22,6 @@ require('owl.carousel');
 // import ScrollReveal from 'scrollreveal';
 // const ScrollReveal = require('scrollreveal');
 let ConsoleLogNav = require('./nav.js');
-const ScrollReveal = require('scrollreveal');
 require('./smoothScroll.js');
 require('./revealing.js');
 

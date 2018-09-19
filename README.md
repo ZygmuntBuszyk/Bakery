@@ -10,4 +10,5 @@ Problems, yet not solved:
 Modules excluded after pushing to gh-pages:
 -owl-carousel,
 -AOS
+-Smooth scroll script
 

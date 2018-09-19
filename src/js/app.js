@@ -2,7 +2,7 @@
 // import '@babel/core';
 // import 'babel-polyfill';
 // import 'babel-preset-es2015';
-
+// import exec from 'script.exec.js';
 // css do js
 require('../css/main.css');
 require('../css/mainNav.css');
@@ -19,14 +19,13 @@ require('../css/OurTeam.css');
 require('../css/newsletter.css');
 require('../css/contact.css');
 require('../css/footer.css');
-require('owl.carousel/dist/assets/owl.carousel.css');
+
+// require('owl.carousel/dist/assets/owl.carousel.css');
 // require('../css/stickyNavbar.css');
 //js scripts
-const $ = require('jquery');
-require('owl.carousel');
-// import ScrollReveal from 'scrollreveal';
-// const ScrollReveal = require('scrollreveal');
-let ConsoleLogNav = require('./nav.js');
+// const $ = require('jquery');
+// require('owl.carousel');
+require('./nav.js');
 require('./smoothScroll.js');
 require('./revealing.js');
 

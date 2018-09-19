@@ -17,8 +17,19 @@ module.exports = {
       {
         test: /\.(gif|jpe?g|png)$/,
         loader: 'url-loader'
+      },
+      {
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
       }
     ]
   },
+
   mode: 'none'
 };

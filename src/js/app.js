@@ -14,10 +14,10 @@ require('../css/OurTeam.css');
 require('../css/newsletter.css');
 require('../css/contact.css');
 require('../css/footer.css');
+require('owl.carousel/dist/assets/owl.carousel.css');
 // require('../css/stickyNavbar.css');
 //js scripts
 const $ = require('jquery');
-require('owl.carousel/dist/assets/owl.carousel.css');
 require('owl.carousel');
 // import ScrollReveal from 'scrollreveal';
 // const ScrollReveal = require('scrollreveal');

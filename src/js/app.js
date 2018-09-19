@@ -1,3 +1,8 @@
+// Babel
+// import '@babel/core';
+// import 'babel-polyfill';
+// import 'babel-preset-es2015';
+
 // css do js
 require('../css/main.css');
 require('../css/mainNav.css');

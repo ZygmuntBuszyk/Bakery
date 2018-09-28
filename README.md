@@ -7,13 +7,6 @@ Live on: https://zygmuntbuszyk.github.io/Bakery/
 
 
 Problems, yet not solved:
-Modules excluded after pushing to gh-pages:
--owl-carousel,
--AOS
--Smooth scroll script
-
-
-Brzydkie rozwiązanie to wrzucić wszystko w cdn i script, zamiast modułów i komponentów i wypiąć się na bundle.js.
-Ale too rozwiązanie jest gówniane i nie pomaga na dłuższą metę, więc nie pójdę tą ścieżką. 
-
-
+- NOT YET COMPRESSED IMAGES
+- Not really compatable with many browsers
+- Gh-pages find tells me, that he got some network problems while loading modules(had to cdn the jquery rathen then install it locally).
